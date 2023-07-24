@@ -1,0 +1,67 @@
+.mat-select {
+    display: inline-block;
+    width: 100%;
+    outline: 0;
+    background-color: #fff;
+    color: #2e2925;
+    border: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    position: relative;
+    font-size: 11px;
+    padding: 0px 10px;
+    height: 29px;
+    width: 100%;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    background-image: url(assets/img/select.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    margin-top: 3px;
+}
+
+.mat-select-value-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mat-select-value {
+    display: table-cell;
+    max-width: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #2e2925;
+    border: 0px;
+    padding: 0px;
+    font-size: 11px;
+    padding: 8px 0px;
+    outline: none;
+}
+
+.mat-select-arrow-wrapper .mat-select-arrow {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 5px solid;
+    margin: 0 4px;
+}
+
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
+    background: #e71618;
+    color: #fff;
+}
+
+.mat-option:focus:not(.mat-option-disabled), .mat-option:hover:not(.mat-option-disabled) {
+    background:#f4bcbc;
+    color: #fff;
+}
+
+.mat-option.mat-active {
+    background: #e71618;
+    color: #fff;
+}

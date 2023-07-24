@@ -1,0 +1,60 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tblMaxh {
+    max-height: 200px;    
+    padding-right: 14px;
+}
+
+.tblGeneral {
+    width: 98.8%;
+    padding: 10px 0%;
+    margin: 0px auto;
+    background-color: #faf9f9;
+}
+
+.tblGeneral tr th {
+    padding: 5px 10px 6px 10px;
+    color: #333333;
+    text-align: center;
+    font-weight: 100;
+    border-bottom: 2px solid #006341;
+    font-size: 14px;
+    font-family: 'AvenirNextLTPro-Medium';
+    min-width: 87px;
+}
+
+.tblGeneral tr td {
+    padding: 7px 10px 7px 10px;
+    color: #606664;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 3px solid #ffffff;    
+    border-right: 2px solid #fff;
+}
+
+.tblGeneral tr:nth-child(odd) td {
+    background-color: #faf9f9;
+}
+
+.tblGeneral tr:nth-child(even) td {
+    background-color: #ffffff;
+}
+
+.tblGeneral tr:hover td {    
+    background-color: #e6efe6;
+}
+
+.tblGeneral tr td a{
+    cursor: pointer;
+    color: #5fac98;
+    text-decoration: underline;
+    font-family: 'AvenirNextLTPro-Medium';
+}
+
+.tblGeneral tr td img{
+    width: 15px;    
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+.contenedorBtn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 6px 15px 5px 15px;
+    min-width: 120px;
+    max-width: 200px;
+    font-family: "AvenirNextLTPro-Medium";
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border-radius: 14px;
+    font-size: 14px;
+    border: none;
+    margin: 0.5rem;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn > img{
+    height: 17px;
+    width: 17px;
+    margin-right: 5px;
+}
+
+.btnPrimarioComunidad{
+    background-color: #40AE2A;
+}
+
+.btnPrimario{
+    background-color: #e71618;
+
+}
+
+.btnSecundario{
+    background-color: #ffffff;
+    border: 2px solid #e71618;
+    color: #e71618;
+}
+
+.btnTerciario{
+    color: #000000;
+    text-decoration: underline;
+    background-color: unset!important;
+}
+
+.btnCenter {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;   
+    margin: 15px 0px 10px 0px;
+    align-items: center;
+
+    a, button, input[type="button"]{
+        margin: 0 20px;
+    }
+
+    > a.liga{
+        color: #006341;
+
+    }
+}
+
+
+
+
+

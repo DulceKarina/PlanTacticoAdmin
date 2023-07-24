@@ -1,0 +1,399 @@
+@import url('assets/styles/_fonts.scss');
+
+@import 'secciones';
+@import 'forms';
+@import 'select';
+@import 'botones';
+@import 'menu';
+@import 'utilidades';
+@import 'login';
+@import 'carousel';
+@import 'cards';
+@import 'comunidad';
+
+*{ 
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Avenir_Next_Regular'!important;
+    font-weight: normal;
+    font-style: normal;
+    color: #333333;
+    height: 100%;
+    min-width: 330px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ffffff;
+    height: 100%;
+    line-height: 1.2;
+}
+
+/* Scroll */
+*::-webkit-scrollbar { 
+    width: 6px; 
+}
+
+*::-webkit-scrollbar-track { 
+    background-color: #afafaf; 
+}
+
+*::-webkit-scrollbar-thumb { 
+    background-color: #e71618; 
+}
+
+.scroll { 
+    overflow-x: auto; 
+}
+
+.scroll::-webkit-scrollbar {
+    height: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background-color: #afafaf;
+}
+.scrolly {
+    overflow-y: scroll;
+}
+
+.scrolly::-webkit-scrollbar {
+    height: 5px;
+}
+
+.scrolly::-webkit-scrollbar-track { 
+    background-color: #afafaf; 
+}
+
+.scrolly::-webkit-scrollbar-thumb { 
+    background-color: #e71618; 
+}
+
+a {
+    text-decoration: none;
+}
+
+a.liga {
+    color: #5fac98;
+    text-decoration: underline;
+    font-family: 'AvenirNextLTPro-Medium';
+    cursor: pointer;
+}
+
+p{ 
+    margin-bottom: 30px;
+}
+
+.page{
+    margin-bottom: 60px;    
+    min-width: 330px;
+}
+
+
+
+
+
+
+
+
+
+
+//Pendientes de ubicar ---------------------------------------------------------
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #006341;   
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+.header > div{
+    width:33%; 
+}
+
+.header > div.headerLogo {
+    text-align: center;
+}
+
+.header > div.headerMenu {
+    padding: 0px 15px;
+}
+
+.header > div.headerUser {
+    justify-content: flex-end;
+    padding: 0px  5px 0px 0px;
+}
+
+img#imgLogo {
+    padding: 6px 0px 0px 0px;
+    height: 40px
+}
+
+.headerMenu a img{ 
+    width: 21px;
+}
+
+div.pic {
+    display: block;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    margin: 0 0 0 10px;
+    background: #FFFFFF no-repeat center center;
+    border: solid 2px #666666;
+    border-radius: 50%;
+    background-size: 80%;
+}
+
+.user-menu a img{
+    width: 10px;
+}
+
+.headerUser{
+    display: flex;
+    align-items: center;
+}	
+
+.user-menu {
+    margin: 23px 4px 0px 4px;
+}
+
+.name {
+    color: #000;
+    font-size: 12px;    
+    line-height: 17px; 
+    text-align: right;
+}
+
+.fecha {
+    font-size: 11px;
+    line-height: 15px;
+    padding: 0px 6px;
+}
+
+@media screen and (max-width: 1023px) { 
+    .fecha {
+        display: none;
+    }
+}
+
+/*Titulo*/
+.titulo {
+    padding: 8px 2% 8px 15px;
+    background-color: #fafafa;
+    font-size: 18px;
+    color: #43413B;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 15px;
+
+    label{
+        font-family: 'Avenir_Next_Bold';
+    }
+
+    .ruta{
+        font-size: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 1px 0px 0px 0px;
+        margin-bottom: 8px;
+
+        a{
+            color: #7E7E7E;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: #f8f7f7;
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 11px;    
+    z-index: 2;    
+    min-width: 320px;
+
+    div{
+        width: 50%; 
+        padding: 0px  3%;
+    }
+
+    div:nth-child(1){
+        border-right: 2px solid #006341; 
+        text-align: right;
+    }
+
+    div:nth-child(2){
+        text-align: left;
+    }
+}
+
+.intro {
+    width: 65%;
+    margin: auto;
+    color: #006341;
+    font-size: 4rem;
+    font-family: 'Avenir_Next_Demi_Bold';
+    margin-top: 3%;    
+    text-align: center;
+
+    img{
+        width: 70%; 
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .intro { 
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    div.name{
+        display: none;
+    }
+    div.title h1 {
+        font-size: 22px;line-height: 24px;
+    }
+    div.pic {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+.contSecc {
+    width: 94%;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.contHome { 
+    margin-top: -15px;
+}
+
+.contHome {
+    width: 100%;
+    height: 100%!important;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    height: 87%;
+}
+
+.titHome {
+    position: absolute; 
+    top: 10%;
+    left: 5%;
+    max-width: 600px;
+}
+
+.titHome1 {
+    font-size: 4em;
+    font-family: 'Avenir_Next_Demi_Bold';
+    text-shadow: 1px 2px 5px #000000;
+    color: #fff;
+}
+
+.titHome2 {
+    font-size: 2em; 
+    color: #5fac98;
+}
+
+span.txtG {
+    color: #006340;
+    text-shadow: 1px 2px 1px #fff;
+}
+
+img.imgHome {
+    position: absolute;
+    width: 80%;
+    bottom: 30px;
+    right: 30px;
+    max-width: 900px;
+}
+
+.titSec {
+    padding: 15px 0% 5px 0px;
+    font-family: 'Avenir_Next_Demi_Bold';
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    div:nth-child(1){
+        flex: 1 1 auto;
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
+
+    div:nth-child(2){
+        font-size: 12px;
+    }
+}
+
+.tit {
+    color: #333333;
+    font-family: 'AvenirNextLTPro-Medium';
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.titCol {
+    color: #333333;
+    font-family: 'AvenirNextLTPro-Medium';
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+   padding-left: 1%;   
+}
+
+.gris {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 15px 15px;  
+    margin-bottom: 15px;    
+    text-align: justify;
+}
+
+img.ico {
+    width: 20px; 
+    height: 20px;    
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

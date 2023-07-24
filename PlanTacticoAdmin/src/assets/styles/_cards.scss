@@ -1,0 +1,43 @@
+.contenedor-card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    flex-wrap: wrap;
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        max-width: 20rem;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        margin: 1rem;
+        margin-bottom: 2rem;
+
+        .titulo-card{
+            font-family: 'Avenir_Next_Bold';
+            font-size: 20px;
+            z-index: 999;
+            padding: 1rem;
+        }
+
+        .contenido-card{
+            padding: 1rem 2rem;            
+            text-align: center;
+        }
+    }
+
+    .img-eclipse{
+        img{ 
+            max-width: 100%;
+            border-bottom-left-radius: 135rem;
+            border-bottom-right-radius: 135rem;
+            border-top-left-radius: 10rem;
+            border-top-right-radius: 10rem;
+            margin-top: -5px;
+        }
+    }
+}

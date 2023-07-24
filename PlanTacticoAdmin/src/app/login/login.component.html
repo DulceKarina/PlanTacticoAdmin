@@ -1,0 +1,64 @@
+ <div class="ContLogin">
+    <div class="imagen"></div>
+    <div class="login">
+        <div class="divLogin">
+            <div class="login-logo">
+                <img src="assets/img/logoGrupoElektra.png">
+            </div>
+            <div class="subtit">
+                Bienvenido 
+                <h4>Admistrador Plan Táctico</h4>
+            </div>
+            <ng-container *ngIf="tipoVista">
+                <div class="divCol">
+                    <div class="col1 tLeft">
+                        Usuario
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="contenedorBtn">
+                    <button class="btn btnPrimario" (click)="tipoVista = !tipoVista"  style="display:none">
+                        <img src="assets/img/botones/icoHuella.svg" alt="Huella">
+                        Ingresar
+                    </button>
+                    <button class="btn btnSecundario" (click)="tipoVista = !tipoVista">
+                        <img src="assets/img/botones/icoKeySecundario.svg" alt="llave">
+                               Ingresar
+                    </button>
+                </div>
+            </ng-container>
+
+            <ng-container *ngIf="!tipoVista">
+                <div class="divCol tLeft">
+                    <div class="col1">
+                        Usuario <br>
+                        <input type="text" class="desac" value="Dulce Karina Guerrero Martínez">
+                    </div>
+                    <div class="col1">
+                        Número de empleado <br>
+                        <input type="text" class="desac" value="78286">
+                    </div>
+                    <div class="col1">
+                        Entorno <br>
+                        <input type="text" class="desac" value="Plan Táctico">
+                    </div>
+                    <div class="col1">
+                        Rol <br>
+                        <!-- <mat-select  placeholder="Selecciona el rol con el que desea ingresar">
+                            <mat-option value="1">Administrador</mat-option>
+                            <mat-option value="1">Usuario</mat-option>
+                        </mat-select> -->
+                    </div>
+                </div>
+                <div class="contenedorBtn">
+                    <button class="btn btnPrimario">
+                        Continuar
+                    </button>
+                    <button class="btn btnTerciario" (click)="tipoVista = !tipoVista">
+                        Cerrar sesión
+                    </button>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div> 

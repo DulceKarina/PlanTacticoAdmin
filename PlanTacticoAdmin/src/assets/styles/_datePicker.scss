@@ -1,0 +1,37 @@
+.datePick > .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button {
+    min-width: unset !important;
+    padding: unset !important;
+    position: absolute;
+    right: 0px;
+    top: -7px;
+}
+
+.mat-calendar-body-selected {
+    background-color: #006341 !important;
+    color: #fff;
+}
+
+.mat-datepicker-toggle{
+    position: absolute;
+    top: 14px;
+    right: 0px;
+}
+
+.mat-datepicker-toggle-active {
+    color: #006341 !important;
+}
+
+.matInputCustom {
+    background-color: #fff;
+    color: #2e2925;
+    border: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    position: relative;
+    font-size: 11px;
+    padding: 0px 10px;
+    height: 29px;
+    width: 100%;
+    border: 1px solid #bfbfbf;
+    outline: none;
+}
